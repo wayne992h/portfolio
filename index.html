@@ -1,0 +1,166 @@
+<!--Professor: Sanaa Issa
+    Student: Dai Huang
+    Student number: 040963822
+    Course: CST8285 313
+    Description: Assignment 1
+    *-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="portfolio-js.js"></script>
+    </head>
+
+    <body>
+        <!--It's the same navigator panel used in all the html page-->
+        <div id="panel">
+            <div class="container">
+                <nav>
+                    <img src="images/AlgonquinLogo.png" class="logo" alt="Algonquin College">
+                    <ul id="sidemenu">
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="projects.html" target="_blank">Projects</a></li>
+                        <li><a href="courses.html" target="_blank">Courses</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <i onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+
+    <!--introduction about myself-->
+        <div id="introduction">
+            <div class="header-text">
+                <p>Introduction</p>
+                <h1>Hi, I'm <span>Dai Huang</span><br>A Computer Programmer<br>From <a href="https://www.algonquincollege.com/" target="_blank">Algonquin College</a></h1>
+            </div>
+        </div>
+    <!--This about part include some information about my school and myself-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Dai Huang, I'm an entry level computer porgrammer. My favourite hobby is watching football games and listening to classic music.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Algonquin College</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Computer Programming</span><br>Java/Python/Linux</li>
+                            <li><span>Database Management</span><br>MySQL Workbench/Oracle</li>
+                            <li><span>Web Development</span><br>Html/CSS/JavaScript</li>
+                            <li><span>Microsoft Office</span><br>Excel/Word/Access</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2022</span><br>Business Administration(3 year) - Algonquin College</li>
+                            <li><span>2022 - Current</span><br>Computer programming(2 year) - Algonquin College</li>                     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>History</span><br>The Ontario Vocational Centre (OVC) opened in 1965 on what is now the College's Woodroffe Campus. </li>
+                            <li><span>Feature</span><br>Algonquin College is internationally recognized for: Diverse areas of studies that answer to the needs of today's employment market.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects part shows three projects and different links connect to projects.html-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Greedy Snake</h2>
+                    <p>I created a Greedy Snake game in Java.</p>
+                    <a href="projects.html">Learn more</a>
+                </div>
+                <div>
+                    <h2>Employees Database</h2>
+                    <p>I built a employee database in MySQL and Access.</p>
+                    <a href="projects.html">Learn more</a>
+                </div>
+                <div>
+                    <h2>Personal portfolio</h2>
+                    <p>I built a personal portfolio in Html/CSS/JavaScript.</p>
+                    <a href="projects.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Course part shows some of my courses which include a link connect to courses.html-->
+    <div id="course">
+        <div class="container">
+            <h1 class="sub-title">My Courses</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Computer-Programmer.jpg" alt="Computer">
+                    <div class="layer">
+                        <h3>Computer Programming</h3>
+                        <p>Computer programming is the process of writing code to facilitate specific actions in a computer, application or software program, and instructs them on how to perform.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/database.jpg" alt="database">
+                    <div class="layer">
+                        <h3>Database Managerment</h3>
+                        <p>Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/web.png" alt="web">
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+                    </div>
+                </div>
+            </div>
+            <a href="courses.html" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--This contact part allows visitors to send mail to my mailbox-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> huan0233@algonquinlive.com</p>
+                    <p> 613-240-7777</p>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>Author: Dai Huang | Professor: Sanaa Issa</p>
+        </footer>
+    </body>
+</html>
